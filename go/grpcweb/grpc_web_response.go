@@ -91,6 +91,7 @@ func (w *grpcWebResponse) finishRequest(req *http.Request) {
 	} else {
 		w.WriteHeader(http.StatusOK)
 		flushWriter(w.wrapped)
+		w.copyTrailersToPayload()
 	}
 }
 
