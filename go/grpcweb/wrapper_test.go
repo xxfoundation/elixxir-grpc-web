@@ -23,10 +23,10 @@ import (
 	"testing"
 	"time"
 
+	"git.xx.network/elixxir/grpc-web/go/grpcweb"
+	testproto "git.xx.network/elixxir/grpc-web/integration_test/go/_proto/improbable/grpcweb/test"
 	"github.com/golang/protobuf/proto"
 	google_protobuf "github.com/golang/protobuf/ptypes/empty"
-	"github.com/improbable-eng/grpc-web/go/grpcweb"
-	testproto "github.com/improbable-eng/grpc-web/integration_test/go/_proto/improbable/grpcweb/test"
 	"github.com/mwitkow/go-conntrack/connhelpers"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

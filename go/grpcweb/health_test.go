@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
+	testproto "git.xx.network/elixxir/grpc-web/integration_test/go/_proto/improbable/grpcweb/test"
 	"github.com/improbable-eng/grpc-web/go/grpcweb"
-	testproto "github.com/improbable-eng/grpc-web/integration_test/go/_proto/improbable/grpcweb/test"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc"
