@@ -28,8 +28,12 @@ type grpcWebResponse struct {
 }
 
 func newGrpcWebResponse(resp http.ResponseWriter, isTextFormat bool) *grpcWebResponse {
+
+	h := make(http.Header)
+	h.Set("Cache-Control", "no-store, must-revalidate")
+
 	g := &grpcWebResponse{
-		headers:     make(http.Header),
+		headers:     h,
 		wrapped:     resp,
 		contentType: grpcWebContentType,
 	}
